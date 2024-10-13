@@ -91,7 +91,7 @@ export const Canvas3D = () => {
     };
   }, [canvasRef]);
 
-  if (window == undefined) return;
+  if (typeof window === 'undefined') return;
 
   return (
     <Canvas id='container3D' ref={canvasRef}>
