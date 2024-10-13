@@ -1,7 +1,12 @@
+'use client';
+import {useEffect} from 'react';
 import {Canvas3D} from '../components/Butterfly/Canvas3D';
 
 /* eslint-disable @next/next/no-img-element */
 const Threejs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Canvas3D />
