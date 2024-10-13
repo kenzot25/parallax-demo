@@ -26,8 +26,8 @@ const Model = React.forwardRef((props, ref) => {
   }, [animations, scene]);
 
   // Update the mixer on every frame
-  useFrame((_state, _delta) => {
-    if (mixerRef.current) mixerRef.current.update(0.02);
+  useFrame((_state, delta) => {
+    if (mixerRef.current) mixerRef.current.update(delta);
   });
 
   // Assign the model reference
